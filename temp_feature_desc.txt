@@ -1,0 +1,29 @@
+# Specification — Chatbot Shown With Book
+## Feature Name
+Book-Side RAG Chatbot
+
+## Description
+An AI chatbot embedded directly within the Physical AI & Humanoid Robotics book interface, allowing users to ask questions while reading.
+
+## UI Placement
+Choose at least ONE (can support both):
+- Right-side panel beside book content
+- Chat section rendered below the book page
+
+## Functional Requirements
+- Chat UI rendered INSIDE docs layout
+- Visible without clicking any button
+- Chat appears automatically on page load
+- User can type questions while reading
+- Selected text from book can be sent as context
+
+## User Stories
+- As a reader, I see the chatbot next to the content
+- As a student, I ask questions without leaving the page
+- As a learner, I highlight text and ask about it
+- As a reviewer, I verify answers are book-based
+
+## Constraints
+- Chat must not overlap text
+- Chat must adapt to mobile screens
+- Chat must respect light/dark theme

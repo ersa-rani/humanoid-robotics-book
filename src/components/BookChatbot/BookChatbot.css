@@ -1,0 +1,26 @@
+.book-chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 400px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--ifm-background-surface-color);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.chat-window-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 996px) {
+  .book-chatbot-container {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

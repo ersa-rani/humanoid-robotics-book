@@ -1,62 +1,60 @@
 <!--
----
-Sync Impact Report
----
-- Version change: none → 1.0.0
-- Added Principles: Accuracy, Clarity, Reproducibility, Rigor, Consistency
-- Added Sections: Standards, Constraints, Success Criteria
+Sync Impact Report:
+- Version change: 1.0.0 → 1.1.0 (MINOR: New principle/section added)
+- Modified principles: Added 6 new principles for Book-Integrated Chatbot
+- Added sections: Implementation Constraints, Quality Assurance
+- Removed sections: None
 - Templates requiring updates:
-  - ✅ .specify/templates/plan-template.md
-  - ✅ .specify/templates/spec-template.md
-  - ✅ .specify/templates/tasks-template.md
-- Follow-up TODOs: None
+  - .specify/templates/plan-template.md ⚠ pending
+  - .specify/templates/spec-template.md ⚠ pending
+  - .specify/templates/tasks-template.md ⚠ pending
+  - .specify/templates/commands/*.md ⚠ pending
+- Follow-up TODOs: RATIFICATION_DATE needs to be set to actual date of original adoption
 -->
-# AI/Spec-Driven Book on AI-Native Software Development Constitution
+# Book-Integrated Chatbot Constitution
 
 ## Core Principles
 
-### Accuracy
-All content verified against authoritative sources.
+### I. UI-First Integration
+The chatbot MUST be visible inside the book UI at all times; it cannot be hidden, optional, or external. This ensures seamless user experience while reading documentation.
 
-### Clarity
-Target audience is CS/software readers; explanations must be precise.
+### II. Mandatory Placement
+Chatbot must appear either beside the book content (right sidebar) or below the book content (bottom dock), must scroll with the book or remain sticky, and must be visible on every documentation page.
 
-### Reproducibility
-Code and workflows must be traceable and testable.
+### III. Forbidden Implementation Patterns
+No external chatbot page, no separate route (/chat), no iframe embeds, no hidden floating-only button. These patterns violate the core requirement of integrated experience.
 
-### Rigor
-Prefer peer-reviewed or official sources.
+### IV. Interactive Functionality
+Users can read and chat simultaneously, users can select book text and ask questions, chatbot must clearly indicate whether it's answering from full book or selected text.
 
-### Consistency
-Maintain uniform terminology, style, and formatting.
+### V. Technology Stack Compliance
+Frontend: Docusaurus (React), Backend: FastAPI, RAG: Qdrant + OpenAI Agents, UI must be implemented inside Docusaurus layout. Deviation from this stack requires explicit architectural approval.
 
-## Standards
+### VI. Success Validation
+If the chatbot is not visible while reading the book, the feature is considered FAILED. This is the primary acceptance criterion.
 
-- Source Verification: Claims supported by credible sources.
-- Citation: APA style.
-- Sources: ≥50% peer-reviewed or official docs.
-- Plagiarism: Zero tolerance.
-- Code: Must run correctly and illustrate concepts.
-- Writing: Flesch-Kincaid grade 10–12.
+## Implementation Constraints
 
-## Constraints
+The following technology stack is mandated for this project:
+- Frontend: Docusaurus (React)
+- Backend: FastAPI
+- RAG: Qdrant + OpenAI Agents
+- UI must be implemented inside Docusaurus layout
 
-- Word Count: 15k–20k (per chapter adjustable).
-- Chapters: Intro, explanations, examples, summary.
-- Format: Markdown for Docusaurus, deployable to GitHub Pages.
-- References: In-text + compiled at chapter end.
+All implementations must comply with these technology choices unless explicitly approved otherwise through architectural decision records.
 
-## Success Criteria
+## Quality Assurance
 
-- All claims verified.
-- Code runs reproducibly.
-- Book deployable via Docusaurus + GitHub Pages.
-- Zero plagiarism.
-- Passes fact-checking.
-- Clear and understandable for audience.
+All features must undergo validation to ensure:
+- Chatbot visibility during book reading
+- Proper interaction between book content and chatbot
+- Correct indication of information source (full book vs. selected text)
+- Compliance with forbidden pattern restrictions
 
 ## Governance
 
-This Constitution is the single source of truth for project principles and standards. All contributions, reviews, and project artifacts must comply with it. Amendments require a documented proposal, review, and an approved migration plan to ensure existing content remains compliant.
+This constitution supersedes all other development practices for the Book-Integrated Chatbot project. Amendments require documentation in the form of Architectural Decision Records (ADRs) with proper approval and migration planning.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08
+All pull requests and code reviews must verify compliance with these principles. Complexity must be justified with clear benefits to the core user experience.
+
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): Date of original adoption | **Last Amended**: 2025-12-30
