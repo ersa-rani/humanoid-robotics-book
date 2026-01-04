@@ -1,11 +1,16 @@
 # Physical AI & Humanoid Robotics 🦾🤖
 
 A **spec-driven, AI-authored technical book** focused on **Physical AI and Humanoid Robotics**, built using **Spec-Kit Plus**, **Claude Code**, and **Docusaurus**, and deployed via **vercel**.
+<img width="1366" height="768" alt="Screenshot (205)" src="https://github.com/user-attachments/assets/2402c4d5-b5ed-465d-98f6-c638fc45a2b2" />
+
+<img width="1366" height="768" alt="Screenshot (202)" src="https://github.com/user-attachments/assets/d0d93a32-681d-477e-a8d5-1a55c61bae03" />
+
+
 
 This project explores how AI systems move beyond digital environments into the **physical world**, enabling humanoid robots to perceive, reason, and act using embodied intelligence.
 
 🌐 Live Book:  
-https://humanoid-robotics-book-kfn6dk8fn-ersa-ranis-projects.vercel.app/
+https://humanoid-robotics-book-7mzo.vercel.app/
 
 ---
 
